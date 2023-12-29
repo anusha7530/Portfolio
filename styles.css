@@ -374,7 +374,7 @@ nav .fa-solid{
     top: 30px;   
  }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 800px){
     #header{
         background-image: url(IMG/pbg.jpg);
     }
@@ -417,7 +417,7 @@ nav .fa-solid{
         flex-basis: 100%;
     }
     .about-col-1{
-        margin-bottom: 30px;
+        height: 300px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
@@ -434,6 +434,9 @@ nav .fa-solid{
     #nextBtn,#backBtn{
         display: none;
     }
+    .work img{
+        height: 270px;
+    }
 }
 @media only screen and (max-width: 500px){
     #top{
@@ -443,7 +446,7 @@ nav .fa-solid{
         display: none;
     }
 }
-@media only screen and (max-width: 1300px){
+@media only screen and (min-width:800px) and (max-width: 1300px){
     #nextBtn,#backBtn{
         height: 20px;
         width: 20px;
