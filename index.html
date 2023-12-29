@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/12d884e548.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ------------Header------------  -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi there,<br />I'm <span>Anusha Agarwal.</span></h1>
+          <span id="element">Web Developer</span><br />
+          <a href="https://github.com/anusha7530" class="github"
+            ><i class="fa-brands fa-github"></i>Github</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------About--------------  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="IMG/about.png" alt="about" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I am a computer science student exploring the realms of software
+              development. I am a passionate Programmer and Web Developer on a
+              perpetual journey to turn ideas into digital realities.I have
+              expertise in C++,HTML, CSS, JavaScript, and more. I am eager to
+              turn ideas into captivating digital experiences.Explore my work
+              and feel free to reach out!
+            </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills')"
+                id="font"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')" id="font">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Languages</span><br />C, C++, Python</li>
+                <li>
+                  <span>Web Development</span><br />HTML, CSS, JavaScipt,
+                  React.JS
+                </li>
+                <li><span>Frameworks</span><br />Bootstrap, Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.Tech(CSE)</span><br />JSS Academy of Technical
+                  Education, Noida
+                </li>
+                <li>
+                  <span>Intermediate</span><br />Ben-Hur Public School,
+                  Pilibhit, UP
+                </li>
+                <li>
+                  <span>10th</span><br />KAMM Scholars School, Pilibhit, UP
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Projects-------------------  -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title pro">My Projects</h1>
+        <div class="wrap">
+          <img src="IMG/left-arrow.png" id="backBtn" />
+          <div class="work-list">
+            <div class="div2">
+              <div class="work">
+                <img src="IMG/FoodDelivery.png" alt="FoodDelivery" />
+                <div class="layer">
+                  <h3>DoorStepMeal.com</h3>
+                  <p>
+                    Fully Responsive food delivery website interface with feedback and login form facility.
+                  </p>
+                  <a href="https://anusha7530.github.io/Food-Delivery-Website/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="IMG/Snake.jpeg" alt="SnakeGame" />
+                <div class="layer">
+                  <h3>Snake Chase</h3>
+                  <p>
+                    Crafted a sleek Snake game,with responsive controls to play in leisure time.
+                  </p>
+                  <a href="https://anusha7530.github.io/SnakeChase/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="IMG/Typing.jpeg" alt="TypingBlitz" />
+                <div class="layer">
+                  <h3>Typing Blitz</h3>
+                  <p>
+                    A Typing Tester application with real-time accuracy and speed measurement.
+                  </p>
+                  <a href="https://anusha7530.github.io/Typing-Blitz/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="div2">
+              <div class="work">
+                <img src="IMG/CSS.png" alt="CSSCreations" />
+                <div class="layer">
+                  <h3>CSS Creations</h3>
+                  <p>
+                    Showcased creativity and precision in web design through diverse CSS creations.
+                  </p>
+                  <a href="https://anusha7530.github.io/CSS-Creations/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="IMG/Tutorials.png" alt="TutorialsHub" />
+                <div class="layer">
+                  <h3>Tutorials Hub</h3>
+                  <p>
+                    Designed and developed a comprehensive Tutorials Hub, a centralized platform offering in-depth learning resources for various programming languages.
+                  </p>
+                  <a href="https://anusha7530.github.io/TutorialsHub.com/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="IMG/TO-DO.png" alt="ToDoList" />
+                <div class="layer">
+                  <h3>To-Do List</h3>
+                  <p>
+                    A Todo List application that enhances task management through a streamlined and intuitive interface
+                  </p>
+                  <a href="https://anusha7530.github.io/To-Do-List/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="IMG/right-arrow.png" id="nextBtn" />
+        </div>
+        <a href="https://github.com/anusha7530" class="btn"
+          >See more<i class="fa-solid fa-circle-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- -----------Contact--------  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Get in Touch</h1>
+            <p><i class="fa-solid fa-envelope"></i>agarwalanusha13@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>7534086750</p>
+            <a href="" download class="btn btn2"
+              ><i class="fa-solid fa-download"></i>Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">
+                <i class="fa-solid fa-paper-plane"></i>Send Message
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/anusha-agarwal-068b70271"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/anusha7530"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://twitter.com/anusha4044"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#header" id="top"
+            ><i class="fa-solid fa-circle-up"></i><span>Go to Top</span></a
+          >
+        </div>
+
+        <p>Copyright &copy Anusha Agarwal. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Programmer",
+          "Web Developer",
+          "Technophile",
+          "Programmer",
+          "Web Developer",
+          "Technophile",
+          "Web Developer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+        let scrollContainer = document.querySelector(".work-list");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nextBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior = "smooth";  
+            scrollContainer.scrollLeft += 500;
+        });
+
+        backBtn.addEventListener("click",()=>{
+            scrollContainer.scrollLeft -= 500;
+        })
+    
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzR-wwEXAy8S2kq0Fqyjgovx5V2RLi0dRnOsAKOGIGqT7yEhUgW2j20R-CQ1wvO1ai5/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
+
+
+<!-- https://docs.google.com/spreadsheets/d/1LFPPhcaJfFtBltb7XKvhOms0vfxJJtwNuuOU7ABATRY/edit#gid=0  -->
