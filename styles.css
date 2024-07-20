@@ -463,6 +463,9 @@ nav .fa-solid{
     .caption{
         padding: 40px 0 0 8px;
     }
+    .lower{
+        display: none;
+    }
 }
 @media only screen and (max-width: 500px){
     #top{
