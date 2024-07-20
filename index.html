@@ -65,52 +65,76 @@
             </div>
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
+            <h1 class="sub-title"><i class="fas fa-user-alt"></i> About me</h1>
             <p>
               I am a computer science student exploring the realms of software
-              development. I am a passionate Programmer and Web Developer on a
-              perpetual journey to turn ideas into digital realities.I have
-              expertise in C++,HTML, CSS, JavaScript, and more. I am eager to
-              turn ideas into captivating digital experiences.Explore my work
+              development. I am a passionate Programmer and Web Developer having
+              expertise in C++,HTML, CSS, JavaScript, and MERN Stack. I am eager
+              to turn ideas into captivating digital experiences.Explore my work
               and feel free to reach out!
             </p>
 
             <div class="tab-titles">
               <p
                 class="tab-links active-link"
-                onclick="opentab('skills')"
+                onclick="opentab('education')"
                 id="font"
               >
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('education')" id="font">
                 Education
               </p>
+              <p class="tab-links" onclick="opentab('experience')" id="font">
+                Experience
+              </p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+            <div class="tab-contents active-tab" id="education">
               <ul>
-                <li><span>Programming Languages</span><br />C, C++, Python</li>
                 <li>
-                  <span>Web Development</span><br />HTML, CSS, JavaScipt,
-                  React.JS, Redux, NodeJS, ExpressJS, MongoDB, Firebase
+                  <div class="tab_head">
+                    <span>B.Tech(CSE)</span><br />
+                    <p class="">2022-2026</p>
+                  </div>
+                  <div class="tab_head">
+                    JSS Academy of Technical Education, Noida
+                    <p>9.2</p>
+                  </div>
                 </li>
                 <li>
-                  <span>Frameworks</span><br />Bootstrap, Tailwind CSS, SASS
+                  <div class="tab_head">
+                    <span>Intermediate</span><br />
+                    <p class="">2021-2022</p>
+                  </div>
+                  <div class="tab_head">
+                    Ben-Hur Public School, Pilibhit, UP
+                    <p>95.4%</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="tab_head">
+                    <span>10th</span><br />
+                    <p class="">2019-2020</p>
+                  </div>
+                  <div class="tab_head">
+                    KAMM Scholars School, Pilibhit, UP
+                    <p>96.4%</p>
+                  </div>
                 </li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
+            <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>B.Tech(CSE)</span><br />JSS Academy of Technical
-                  Education, Noida
+                  <div class="tab_head">
+                    <span>Web Developer</span><br />
+                    <p class="">July 2024 - September 2024</p>
+                  </div>
+                  Winter Of Blockchain 2024
                 </li>
                 <li>
-                  <span>Intermediate</span><br />Ben-Hur Public School,
-                  Pilibhit, UP
-                </li>
-                <li>
-                  <span>10th</span><br />KAMM Scholars School, Pilibhit, UP
+                  <div class="tab_head">
+                    <span>Web Developer Intern</span><br />
+                    <p class="">May 2024 - July 2024</p>
+                  </div>
+                  Infits
                 </li>
               </ul>
             </div>
@@ -119,10 +143,25 @@
       </div>
     </div>
 
+    <!-- -----------------------Skills--------------------- -->
+    <div id="skills" class="skills">
+      <div class="container">
+        <h2 class="sub-title pro">
+          <i class="fas fa-laptop-code"></i> My Skills
+        </h2>
+
+        <div class="s_container">
+          <div class="row" id="skillsContainer"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- ------------------Projects-------------------  -->
     <div id="projects">
       <div class="container">
-        <h1 class="sub-title pro">My Projects</h1>
+        <h1 class="sub-title pro">
+          <i class="fas fa-laptop-code"></i> My Projects
+        </h1>
         <div class="wrap">
           <img src="Utils/left-arrow.png" id="backBtn" />
           <div class="work-list">
@@ -132,7 +171,10 @@
                 <div class="layer">
                   <h3>Health-Spot</h3>
                   <p>
-                    A MERN stack doctor appointment project facilitates seamless booking and management of appointments between patients and doctors, integrating MongoDB, Express.js, React, and Node.js for robust functionality.
+                    A MERN stack doctor appointment project facilitates seamless
+                    booking and management of appointments between patients and
+                    doctors, integrating MongoDB, Express.js, React, and Node.js
+                    for robust functionality.
                   </p>
                   <a href="https://healthspot.onrender.com/" target="_blank"
                     ><i class="fa-solid fa-arrow-up-right-from-square"></i
@@ -324,7 +366,16 @@
             >
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet" autocomplete="off">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              autocomplete="off"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="d88b79bb-59c0-43bd-a49e-777e388013f4"
+              />
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
@@ -337,7 +388,7 @@
                 rows="3"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit" class="btn btn2">
+              <button class="btn btn2" type="submit">
                 <i class="fa-solid fa-paper-plane"></i>Send Message
               </button>
             </form>
@@ -366,86 +417,7 @@
     </div>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Programmer",
-          "Web Developer",
-          "Technophile",
-          "Programmer",
-          "Web Developer",
-          "Technophile",
-          "Web Developer",
-        ],
-        typeSpeed: 50,
-      });
-    </script>
 
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-
-    <script>
-      let scrollContainer = document.querySelector(".work-list");
-      let backBtn = document.getElementById("backBtn");
-      let nextBtn = document.getElementById("nextBtn");
-
-      scrollContainer.addEventListener("wheel", (evt) => {
-        evt.preventDefault();
-        scrollContainer.scrollLeft += evt.deltaY;
-        scrollContainer.style.scrollBehavior = "auto";
-      });
-
-      nextBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 500;
-      });
-
-      backBtn.addEventListener("click", () => {
-        scrollContainer.scrollLeft -= 500;
-      });
-    </script>
-
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzR-wwEXAy8S2kq0Fqyjgovx5V2RLi0dRnOsAKOGIGqT7yEhUgW2j20R-CQ1wvO1ai5/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
