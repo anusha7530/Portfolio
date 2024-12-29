@@ -318,7 +318,8 @@ nav ul li a:hover::after {
 .skills .s_container .bar {
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: #152074;
+  /* background: rgba(0, 0, 22, 0.9); */
+  background: #88062f;
   transition: 0.2s;
 }
 .skills .s_container .bar:hover {
