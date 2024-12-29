@@ -304,25 +304,22 @@ nav ul li a:hover::after {
   min-height: 90vh;
 }
 .skills .s_container {
-  background: #88062f;
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
-  margin: auto;
   margin-top: 2rem;
 }
 .skills .s_container .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 1.8rem;
 }
 .skills .s_container .bar {
-  margin-bottom: 15px;
-  padding: 10px;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 22, 0.9);
+  /* background: rgba(0, 0, 22, 0.9); */
+  background: #88062f;
   transition: 0.2s;
 }
 .skills .s_container .bar:hover {
@@ -521,15 +518,12 @@ nav .fa-solid {
     margin: 0;
   }
   .skills .s_container .row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 1rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
   }
-  .skills .s_container {
-    margin-top: 5px;
-    width: 100%;
-  }
+
 }
 @media only screen and (max-width: 500px) {
   #top {
@@ -541,9 +535,8 @@ nav .fa-solid {
   .caption {
     padding: 0 0 0 8px;
   }
-  .skills .s_container {
-    margin-top: 5px;
-    width: 100%;
+  .skills .s_container .row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1300px) {
@@ -555,5 +548,8 @@ nav .fa-solid {
   }
   .work img {
     height: 250px;
+  }
+  .skills .s_container .row {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
