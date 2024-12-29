@@ -91,9 +91,7 @@ nav ul li a:hover::after {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.about-col-1 {
-  flex-basis: 35%;
-}
+
 .video-container {
   width: 100%;
   position: relative;
@@ -120,6 +118,11 @@ nav ul li a:hover::after {
   color: black;
   z-index: 1;
   position: relative;
+}
+.about-col-1{
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .about-col-2 {
   flex-basis: 60%;
@@ -389,7 +392,7 @@ form textarea {
   border-radius: 6px;
 }
 form .btn2 {
-  padding: 14px 60px;
+  padding: 14px 50px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
@@ -486,13 +489,6 @@ nav .fa-solid {
   }
   .sub-title {
     font-size: 45px;
-  }
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-  .about-col-1 {
-    height: 300px;
   }
   .contact-left,
   .contact-right {

@@ -63,6 +63,10 @@
     {
         "name": "TypeScript",
         "icon": "https://img.icons8.com/?size=100&id=nCj4PvnCO0tZ&format=png&color=000000 width=50"
+    },
+    {
+        "name": "NextJS",
+        "icon": "https://img.icons8.com/?size=100&id=AU6Wc7r56Fxz&format=png&color=000000 width=50"
     }
    
 ]
