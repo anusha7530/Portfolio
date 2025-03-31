@@ -343,13 +343,11 @@ nav ul li a:hover::after {
 .skills .s_container .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* flex-wrap: wrap; */
   gap: 1.8rem;
 }
 .skills .s_container .bar {
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  /* background: rgba(0, 0, 22, 0.9); */
   background: #88062f;
   transition: 0.2s;
 }
@@ -568,6 +566,11 @@ nav .fa-solid {
   }
   .skills .s_container .row {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 300px) {
+  .skills .s_container .row {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1300px) {
