@@ -77,22 +77,3 @@ nextBtn.addEventListener("click", () => {
 backBtn.addEventListener("click", () => {
   scrollContainer.scrollLeft -= 500;
 });
-
-// Contact-Us
-// const scriptURL =
-//   "https://script.google.com/macros/s/AKfycbzR-wwEXAy8S2kq0Fqyjgovx5V2RLi0dRnOsAKOGIGqT7yEhUgW2j20R-CQ1wvO1ai5/exec";
-// const form = document.forms["submit-to-google-sheet"];
-// const msg = document.getElementById("msg");
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-//     .then((response) => {
-//       msg.innerHTML = "Message sent successfully";
-//       setTimeout(function () {
-//         msg.innerHTML = "";
-//       }, 5000);
-//       form.reset();
-//     })
-//     .catch((error) => console.error("Error!", error.message));
-// });

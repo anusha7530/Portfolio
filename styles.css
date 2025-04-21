@@ -379,14 +379,18 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 2px;
+  margin-top: 20px;
+}
+.skills .s_container .bar .info{
+  gap: 2px;
+  margin-top: 20px;
 }
 .skills .container .bar .info i {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .skills .container .bar .info span {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-left: 0.5rem;
 }
@@ -600,11 +604,6 @@ nav .fa-solid {
   }
   .skills .s_container .row {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 300px) {
-  .skills .s_container .row {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1300px) {
