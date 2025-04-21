@@ -130,6 +130,26 @@ nav ul li a:hover::after {
 .about-col-2 p {
   font-size: 19px;
 }
+.about_btn{
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+.about_btn a{
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+  font-size: 20px;
+}
+.about_btn a:hover {
+  background: #ff004f;
+}
 .sub-title {
   font-size: 50px;
   font-weight: 600;
@@ -457,16 +477,27 @@ form .btn2 {
   display: block;
 }
 #top {
-  position: absolute;
-  bottom: 10;
-  right: 0;
-  width: 200px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  /* padding: 10px 15px; */
+  border-radius: 50%;
+  text-align: center;
   text-decoration: none;
-  font-size: 25px;
-  padding: 0 20px;
-  box-shadow: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
 }
-
+#top:hover {
+  background-color: #555;
+}
+#top i{
+  font-size:xx-large;
+}
 /* ----------small screen css---------  */
 nav .fa-solid {
   display: none;
@@ -551,6 +582,9 @@ nav .fa-solid {
     margin: 1rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
+  }
+  .about_btn{
+    flex-direction: column;
   }
 
 }
