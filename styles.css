@@ -428,12 +428,12 @@ form .btn2 {
   width: 100%;
   text-align: center;
   padding: 8px 0 0 0;
-  background: #262626;
+  /* background: #262626; */
   font-weight: 300;
   margin-top: 20px;
 }
 .copyright p {
-  background: #080808;
+  background: #262626;
 }
 .social-icons a {
   text-decoration: none;
